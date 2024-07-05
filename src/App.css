@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  background: url('https://preview.redd.it/more-jammy-jellyfish-wallpapers-cause-i-dont-like-the-v0-aqtet5h7dtc91.png?width=640&crop=smart&auto=webp&s=7321320098e3efdafb61fbe81597e77e9087d73f') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.terminal {
+  width: 80%;
+  max-width: 800px;
+  background: #2e3436;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background: #202020;
+  border-radius: 5px 5px 0 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56; /* close button */
+}
+
+.buttons span:nth-child(2) {
+  background: #ffbd2e; /* minimize button */
+}
+
+.buttons span:nth-child(3) {
+  background: #27c93f; /* maximize button */
+}
+
+.title {
+  font-weight: bold;
+}
+
+.terminal-body {
+  padding: 10px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #000000;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.command, .response {
+  margin-bottom: 10px;
+}
+
+.typing {
+  white-space: pre-wrap;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.prompt {
+  margin-right: 5px;
+}
+
+input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
